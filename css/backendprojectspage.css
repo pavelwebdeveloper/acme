@@ -1,0 +1,56 @@
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+#projects {
+    font-size: 1.7rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    color: #000;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1360px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+.aside {
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
+}
+main img {
+    width: 150px;
+    height: auto;
+    margin-left: 30px;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    clear:both;
+    font-size: 16px;
+}
+

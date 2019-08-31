@@ -1,0 +1,1026 @@
+/*----------GENERAL LAYOUT---------------*/
+
+html {
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+    background-image: url("/backendprojects/phpprojects/acme/images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+header div#upperheader {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ background-color: #ffffff;
+ align-items: center;
+ padding: 10px;
+ font-family: 'Bubblegum Sans', cursive, "PT Serif";
+}
+
+header .linkright .headerright div {
+ color: #000000;
+ font-size: 1em;
+}
+
+header .linkright {
+ color: #000000;
+ font-size: 1.5em;
+ padding: 4px;
+}
+
+/*header a.linkright {
+ 
+ font-size: 1em;
+ 
+}*/
+
+header .linkright span {
+ font-weight: normal;
+ font-size: 0.5em;
+}
+
+header .linkright:hover {
+ text-decoration: none;
+ background-color: #808080;
+ color: #ffffff;
+}
+
+header #logo {
+ width: 120px;
+}
+
+header #folderimage {
+ width: 25px;
+ height: 15px;
+}
+
+header .headerright {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-around;
+ align-items: center;
+}
+
+header .headerright div {
+ margin: 5px;
+ font-size: 20px;
+}
+
+header button#smallmenu {
+    width: 100%;
+    margin: 0;
+    background-color: #de2226;
+    border: 1px solid white;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    text-align: start;
+}
+
+nav ul {
+ display: flex;
+ flex-flow: column nowrap;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #de2226;
+}
+
+.hide {
+    display: none;
+}
+
+nav ul {
+ display: flex;
+ flex-flow: column nowrap;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #de2226;
+}
+
+nav ul li {
+ border: 1px solid white;
+}
+
+nav ul li a {
+ display: block;
+ color: #ffffff;
+ font-family: 'Delius Swash Caps', cursive, "PT Serif";
+ font-size: 25px;
+ text-align: center;
+ padding: 3px 5px;
+ text-decoration: none;
+ margin: 0;
+ cursor: pointer;
+}
+
+nav ul li a:hover {
+ background-color: #ffffff;
+ color: #de2226;
+}
+
+nav ul li a.active {
+ background-color: #ffffff;
+ color: #de2226;
+}
+
+nav ul li a.active:hover {
+ background-color: #de2226;
+ color: #ffffff;
+}
+
+/*nav {
+ margin-bottom: -25px;
+}*/
+
+main {
+ background-color: #ffffff;
+ font-family: 'Bubblegum Sans', cursive, "PT Serif";
+}
+
+main h1 {
+  margin: 0 5px 0 5px;
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+
+
+main p#bottomline {
+  border-bottom: 1px solid black;
+  margin: 25px 5px 0 5px;
+}
+
+footer {
+ background-color: #ffffff;
+}
+
+footer div {
+ padding: 5px 5px 0 5px;
+}
+
+footer p {
+ margin: 0px;
+ text-align: center;
+ font-size: 1em;
+}
+
+/*--------------THE END OF GENERAL LAYOUT-----------------*/
+
+/*--------------HOME PAGE LAYOUT------------------------------*/
+
+header span {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+main #mainpicture {
+ position: relative;
+ height: 500px;
+}
+
+#mainpicture #featuredproduct {
+ max-width: 100%;
+ margin: 0;
+ padding: 0 3px 0 3px;
+}
+
+main #mainpicture #upperlist {
+ position: absolute;
+ top: 20%;
+ right: 0px;
+ height: 230px;
+ background-color: rgba(255, 255, 255, 0.5);
+ width: 50%;
+ margin: 0px;
+ padding: 10px;
+ background: rgba(255, 255, 255, 0.5);
+}
+
+
+#mainpicture h2 {
+ margin: 0 5px 0 0;
+}
+
+#mainpicture li {
+ list-style-type: none;
+ color: #990033;
+}
+
+main #mainpicture a #actionbtn {
+ width: 150px;
+}
+
+#flex {
+ margin: 0 5px 0 5px;
+ display: flex;
+ flex-flow: column nowrap;
+ margin: 0px 5px 0px 5px;
+ font-size: 16px;
+}
+
+#flex h3 {
+ font-size: 25px;
+}
+
+#flex ul {
+ width: 80%;
+}
+
+main section, article {
+ margin: 0 5px 0 5px;
+}
+
+
+#grid {
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
+ margin-left: 5px;
+}
+    
+#grid figure {
+     margin: 3px;
+    }
+ 
+    #grid div {
+ background-color: rgba(128, 128, 128, 0.5);
+}
+    
+#grid img {
+     margin: 0px 30px;
+    }
+    
+    #grid p.figcaption {
+        text-align: center;
+        border-bottom: none;
+    }
+
+    /*--------------THE END OF HOME PAGE LAYOUT-----------------*/
+
+/*--------------ERROR PAGE LAYOUT------------------------------*/
+
+#errorh {
+ font-size: 100px;
+ margin: 0px;
+}
+
+#errorp {
+ font-size: 40px;
+}
+
+ /*--------------THE END OF ERROR PAGE LAYOUT-----------------*/
+
+/*--------------LOGIN AND REGISTRATION PAGES LAYOUT------------------------------*/
+
+main#clientupdatepage h1 {
+ font-size: 40px;
+}
+
+main#clientupdatepage p {
+ margin-left: 15px;
+ font-size: 25px;
+}
+
+form fieldset {
+    border: none;
+    padding: 20px 10px;
+}
+
+form label {
+    display: block;
+    font-size: 1.3rem;     
+    margin: 0;
+}
+
+form span.passworddescription {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+form fieldset #rp {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+form input, textarea form label#labelpassword input#clientPassword {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1.3rem;
+    border: 1px solid #0000EE;
+    color: #444;
+    width: 100%;
+    max-width: 19rem;
+}
+
+form label#labelpassword input#clientPassword {
+    max-width: 19rem;
+}
+
+form input.submitBtn {
+    border: 2px outset #de2226;
+    background-color: #de2226;
+    color: white;
+    font-size: 1.3rem;
+    padding: .75rem 4.4rem;
+    margin: 1rem 0 0 0;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+p#login {
+ border: none;
+ font-size: 25px;
+ font-weight: bold;
+ margin: 8px 0;
+}
+
+form a#aregister { 
+    border: 2px outset #de2226;
+    background-color: #de2226;
+    color: white;
+    padding: .5rem 2rem;
+    margin: 0;
+    max-width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/*--------------THE END OF LOGIN AND REGISTRATION PAGES LAYOUT-----------------*/
+
+/*--------------PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT------------------------------*/
+
+form select {
+    border: 1px solid #0000EE;
+    width: 100%;
+    font-size: 20px;
+    max-width: 12rem;
+}
+
+form textarea {
+    border: 1px solid #0000EE;
+}
+
+main.productpages a {
+ font-size: 1.5em;
+}
+
+form label.number + input {
+    max-width: 8rem;
+}
+
+.productpages h1{
+ font-size: 2.5em;
+}
+
+.productpages p {
+ margin: 10px;
+ font-size: 1.3em;
+}
+
+main.productpages p.messageinvitation, p.messagefailure {
+ font-size: 35px;
+ color: #DE2226;
+}
+
+main.productpages p.messagesuccess {
+ font-size: 25px;
+ color: #990033;
+}
+             /*===========TABLE LAYOUT==============*/
+table {
+    margin: 10px;
+    box-shadow: 8px 8px 10px grey;
+    max-width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Noto Sans, sans-serif;
+    font-size: 1em;
+}
+
+th {
+    background-color: #808080;
+    color: #0000ee;
+}
+
+tr:nth-child(odd) {
+    background-color: #808080;
+    color: #990033;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+    color: #990033;
+}
+
+main.productpages table a.tablelink {
+ font-size: 1em;
+}
+
+/*--------------THE END OF PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT-----------------*/
+
+/*--------------ADMIN PAGE LAYOUT------------------------------*/
+
+h1#username {
+ font-size: 2.5rem;
+}
+
+h2 {
+ font-size: 1.7em;
+ margin-left: 15px;
+}
+
+ul#adminlist {
+ font-size: 1.5rem;
+ list-style-type: none;
+}
+
+a.adminlink {
+ font-size: 1.5rem;
+ margin-left: 15px;
+}
+
+p {
+ margin: 0 15px 0 15px;
+ font-size: 1.5rem;
+}
+
+main.templatehomepages p.message {
+ font-size: 2rem;
+  color: #de2226;
+}
+
+main.templatehomepages p.messagesuccess {
+ font-size: 25px;
+ color: #990033;
+}
+
+/*--------------THE END OF ADMIN PAGE LAYOUT-----------------*/
+
+/*--------------CLIENT-UPDATE PAGE LAYOUT------------------------------*/
+
+main#clientupdatepage p.message {
+  font-size: 2rem;
+  color: #de2226;
+}
+
+form {
+ border: 1px solid #0000EE;
+ margin: 10px;
+}
+
+/*--------------THE END OF CLIENT-UPDATE PAGE LAYOUT-----------------*/
+
+/*--------------ADD-CATEGORY PAGE LAYOUT------------------------------*/
+
+#addcategorypage p.messageinvitation {
+ font-size: 1.5rem;
+  color: #de2226;
+}
+
+/*--------------THE END OF ADD-CATEGORY PAGE LAYOUT-----------------*/
+
+/*--------------CATEGORY PAGE LAYOUT------------------------------*/
+
+#category h1{
+ text-align: center;
+ font-size: 2.5em;
+}
+
+#prod-display{
+ margin: 0;
+ padding: 5px;
+ display: flex;
+ flex-direction: column;
+}
+
+#prod-display li{
+ margin-bottom: .5em;
+ border: 1px #ccc solid;
+ list-style-type: none;
+ flex: 1 1 auto;
+ display: flex;
+ flex-direction: column;
+}
+
+#prod-display li a{
+  flex: 2 1 auto;
+}
+
+#prod-display li img{
+ width: 100%;
+ height: auto;
+ flex: 2 1 auto;
+}
+
+#prod-display h2{
+ margin: auto;
+ font-size: 1.6em;
+}
+
+#prod-display span{
+ font-size: 2em;
+ color: #DE2226;
+ text-align: center;
+}
+
+/*--------------THE END OF CATEGORY PAGE LAYOUT-----------------*/
+
+/*--------------PRODUCT-DETAIL PAGE LAYOUT------------------------------*/
+
+main.productpages p.messageinvitation {
+ font-size: 1.5rem;
+  color: #de2226;
+}
+
+#product-display {
+ display: flex;
+ flex-direction: column;
+}
+
+#product-description {
+ display: flex;
+ flex-direction: column;
+ margin: 0;
+ padding: 0;
+}
+
+#product-description li{
+  list-style-type: none;
+}
+
+/*#product-display div{
+ overflow: hidden;
+}*/
+
+#product-display img{
+ max-width: 100%;
+ margin: 0;
+ padding: 5px;
+}
+
+#price {
+ font-size: 2em;
+ color: #DE2226;
+ margin: 25px 15px;
+}
+
+p.desriptiontitle {
+ margin: 5px 10px;
+}
+
+p.desriptiontitle span {
+ color: #0000EE;
+}
+
+.productpages ul#thumbnaillist{
+ list-style-type: none;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+
+.productpages ul#thumbnaillist li{
+ align-self: center;
+ margin: 15px;
+}
+
+/*--------------THE END OF PRODUCT-DETAIL PAGE LAYOUT-----------------*/
+
+/*--------------PRODUCT-UPDATE PAGE LAYOUT------------------------------*/
+
+main.productpages fieldset .submitBtn {
+ max-width: 100%;
+ font-size: 1rem;
+}
+
+main.productpages form fieldset textarea#invDescription {
+    display: block;
+    max-width: 19rem;
+}
+
+/*--------------THE END OF PRODUCT-UPDATE PAGE LAYOUT-----------------*/
+
+/*--------------IMAGE-ADMIN PAGE LAYOUT------------------------------*/
+
+#imageadminpage p.successmessage {
+ font-size: 2em;
+ color: #990033;
+}
+
+#imageadminpage p.warningmessage {
+ font-size: 1.5em;
+ color: #DE2226;
+}
+
+#imageadminpage p.failuremessage {
+ font-size: 2em;
+ color: #DE2226;
+}
+
+#imageadminpage form, #uploadfile {
+ border: none;
+}
+
+#imageadminpage #imagesdisplay{
+ list-style-type: none;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+#imageadminpage #imagesdisplay li{
+ align-self: flex-end;
+ margin: 10px;
+}
+
+#imageadminpage #imagesdisplay li p{
+ margin: auto;
+ text-align: center;
+}
+
+#imagesdisplay img{
+ width: 200px;
+}
+
+/**********************************************************************************/
+/****************THE END OF LAYOUT FOR SMALL SCREENS******************************/
+/**********************************************************************************/
+
+/************************************************************************************/
+/****************************LAYOUT FOR MEDIUM SCREENS*******************************/
+/************************************************************************************/
+
+@media only screen and (min-width: 37.5em) {
+ 
+ /*--------------GENERAL LAYOUT-----------------*/
+ 
+ header span {
+ font-size: 2em;
+ font-weight: bold;
+}
+
+header button#smallmenu {
+ display: none;
+}
+
+.hide {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+nav ul {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+nav ul li {
+ border: none;
+}
+
+header .linkright .headerright div {
+ font-size: 1.5em;
+}
+
+header .linkright {
+ font-size: 1.5em;
+}
+
+footer p {
+ font-size: 1.2em;
+}
+ 
+ /*--------------THE END OF GENERAL LAYOUT-----------------*/
+
+/*--------------THE BEGINNING OF HOME PAGE LAYOUT------------------------------*/
+ 
+ header #logo {
+ width: 200px;
+}
+
+header #folderimage {
+ width: 30px;
+ height: 20px;
+}
+
+nav ul li a {
+ font-size: 25px;
+ padding: 7px 9px;
+ margin: 1px;
+}
+
+main h1 {
+  font-size: 50px;
+}
+
+
+/*--------------THE END OF TEMPLATE LAYOUT-----------------*/
+
+/*--------------HOME PAGE LAYOUT------------------------------*/
+
+#mainpicture {
+ height: 350px;
+}
+
+main #mainpicture {
+ height: 500px;
+}
+
+main #mainpicture #upperlist {
+ height: 250px;
+ padding: 10px;
+ width: 50%;
+ top: 0;
+ right: 10px;
+}
+
+#mainpicture li {
+ font-size: 20px;
+}
+
+main #mainpicture a #actionbtn {
+ width: 200px;
+}
+ 
+#flex {
+ font-size: 20px;
+}
+
+#flex h3 {
+ font-size: 30px;
+}
+
+#grid {
+ width: 200px;
+}
+
+#grid img {
+     margin: 0px 70px;
+     width: 70px;
+    }
+
+    /*--------------THE END OF HOME PAGE LAYOUT-----------------*/
+    
+    /*--------------LOGIN AND REGISTRATION PAGES LAYOUT------------------------------*/
+
+form input.submitBtn {    
+    max-width: 50%;
+}
+
+form a#aregister {
+    max-width: 50%;
+}
+    
+    
+/*--------------THE END OF LOGIN AND REGISTRATION PAGES LAYOUT-----------------*/
+
+/*--------------CATEGORY PAGE LAYOUT------------------------------*/
+
+
+#category h1{
+ text-align: left;
+ font-size: 3em;
+}
+
+#prod-display{
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 7px;
+ }
+ 
+ #prod-display li{
+  max-width: 200px;
+  max-height: 800px;
+  flex: 1 0 auto;
+  text-align: center; 
+ }
+ 
+ #prod-display li a {
+  display: flex;
+}
+ 
+ #prod-display li a img{
+  align-self: center;
+}
+ 
+ /*--------------THE END OF CATEGORY PAGE LAYOUT-----------------*/
+ 
+ /*--------------PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT------------------------------*/
+ 
+ /*===========TABLE LAYOUT==============*/
+ 
+ .productpages h1{
+ font-size: 3em;
+}
+
+.productpages p {
+ font-size: 1.5em;
+}
+ 
+ table th, td {
+    font-size: 1.3em;
+}
+ 
+ main.productpages table a.tablelink {
+ font-size: 1.3em;
+}
+ 
+ /*--------------THE END OF PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT-----------------*/
+ 
+ /*--------------PRODUCT-UPDATE PAGE LAYOUT------------------------------*/
+
+main.productpages fieldset .submitBtn {
+ max-width: 50%;
+ font-size: 1rem;
+}
+
+/*--------------THE END OF PRODUCT-UPDATE PAGE LAYOUT-----------------*/
+
+/*--------------IMAGE-ADMIN PAGE LAYOUT------------------------------*/
+
+#imageadminpage form{
+ margin-left: 20px;
+}
+
+/*--------------THE END OF IMAGE-ADMIN PAGE LAYOUT-----------------*/
+
+}
+
+/**********************************************************************************/
+/****************THE END OF LAYOUT FOR MEDIUM SCREENS******************************/
+/**********************************************************************************/
+
+/************************************************************************************/
+/****************************LAYOUT FOR LARGE SCREENS*******************************/
+/************************************************************************************/
+
+@media only screen and (min-width: 64em) {
+ 
+ header #logo {
+ width: 300px;
+}
+
+header #folderimage {
+ width: 40px;
+ height: 25px;
+}
+
+header .linkright .headerright div {
+ font-size: 2em;
+}
+
+header .linkright {
+ font-size: 2em;
+}
+
+nav ul li a {
+ font-size: 30px;
+ padding: 10px 12px;
+ margin: 1px;
+}
+
+main h1 {
+  font-size: 3.5em;
+}
+
+main #bottomline {
+  border-bottom: 4px solid black;
+}
+
+footer p {
+ font-size: 1.4em;
+}
+
+/*--------------THE END OF TEMPLATE LAYOUT-----------------*/
+
+/*--------------HOME PAGE LAYOUT------------------------------*/
+
+main #mainpicture {
+ height: 500px;
+}
+
+main #mainpicture #upperlist {
+ height: 350px;
+ margin-top: 0px;
+ margin-right: 10px;
+ opacity: 1;
+ background-color: transparent;
+}
+
+#mainpicture li {
+ font-size: 25px;
+}
+
+main #mainpicture a #actionbtn {
+ width: 300px;
+}
+
+#flex {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ margin: 0px 5px 0px 5px;
+ padding-left: 0px;
+}
+
+#flexleft {
+ margin-left: 5px;
+}
+
+ /*--------------THE END OF HOME PAGE LAYOUT-----------------*/
+ 
+ /*--------------LOGIN AND REGISTRATION PAGES LAYOUT------------------------------*/
+
+form input.submitBtn {    
+    max-width: 25%;
+}
+
+form a#aregister {
+    max-width: 25%;
+}
+    
+    
+/*--------------THE END OF LOGIN AND REGISTRATION PAGES LAYOUT-----------------*/
+
+/*--------------CATEGORY PAGE LAYOUT------------------------------*/
+
+#category h1{
+ font-size: 3.5em;
+}
+
+#prod-display{
+ padding: 10px;
+}
+ 
+/*--------------THE END OF CATEGORY PAGE LAYOUT-----------------*/
+
+/*--------------PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT------------------------------*/
+ 
+ /*===========TABLE LAYOUT==============*/
+ 
+ .productpages h1{
+ font-size: 3.5em;
+}
+
+.productpages p {
+ font-size: 1.8em;
+}
+ 
+ /*--------------THE END OF PRODUCT-MANAGEMENT, ADD-CATEGORY AND ADD-PRODUCT PAGES LAYOUT-----------------*/
+
+/*--------------PRODUCT-DETAIL PAGE LAYOUT------------------------------*/
+
+#product-detail h1{
+ text-align: left;
+ font-size: 5em;
+}
+
+#product-display {
+ display: flex;
+ flex-direction: row;
+}
+
+#product-display div{
+ width: 55%;
+ height: auto;
+}
+
+/*--------------PRODUCT-UPDATE PAGE LAYOUT------------------------------*/
+
+main.productpages fieldset .submitBtn {
+ max-width: 25%;
+ font-size: 1rem;
+}
+
+/*--------------THE END OF PRODUCT-UPDATE PAGE LAYOUT-----------------*/
+
+/*--------------IMAGE-ADMIN PAGE LAYOUT------------------------------*/
+
+
+/*--------------THE END OF IMAGE-ADMIN PAGE LAYOUT-----------------*/
+
+}
+
+
+
+/**********************************************************************************/
+/****************THE END OF LAYOUT FOR LARGE SCREENS******************************/
+/**********************************************************************************/
