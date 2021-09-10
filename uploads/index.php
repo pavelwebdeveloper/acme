@@ -41,7 +41,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
 ************************************************************************* */
 
 // directory name where uploaded images are stored
-$image_dir = '/backendprojects/phpprojects/acme/images/products';
+$image_dir = '/phpprojects/acme/images/products';
 // The path is the full path from the server root
 $image_dir_path = $_SERVER['DOCUMENT_ROOT'] . $image_dir;
 
@@ -79,7 +79,7 @@ switch ($action) {
   $_SESSION['message'] = $message;
   
   // Redirect to this controller for default action
-  header('location: /backendprojects/phpprojects/acme/uploads/');
+  header('location: /phpprojects/acme/uploads/');
   break;
  case 'delete':
   // Get the image name and id
@@ -111,7 +111,7 @@ switch ($action) {
   $_SESSION['message'] = $message;
   
   // Redirect to this controller for default action
-  header('location: /backendprojects/phpprojects/acme/uploads/');
+  header('location: /phpprojects/acme/uploads/');
   break;
  default:
   // Call function to return image info from database

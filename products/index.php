@@ -81,7 +81,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
    
    // Check and report the result
    if($addcategoryOutcome === 1){
-   header('location: /backendprojects/phpprojects/acme/products/index.php');
+   header('location: /phpprojects/acme/products/index.php');
    exit;
    } else {
     $message = "<p class='messagefailure'>Sorry, a new category has not been added. Please, try again.</p>";
@@ -196,7 +196,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
    if($updateproductOutcome === 1){
     $message = "<p class='messagesuccess'>Congratulations, $invName has been successfully updated.</p>";
     $_SESSION['message']= $message;
-    header('location: /backendprojects/phpprojects/acme/products/');
+    header('location: /phpprojects/acme/products/');
    exit;
    } else {
     $message = "<p class='messagefailure'>Sorry, $invName has not been updated. Please, try again.</p>";
@@ -224,12 +224,12 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
    if($deleteOutcome){
     $message = "<p class='messagesuccess'>$invName Product has been successfully deleted.</p>";
     $_SESSION['message']= $message;
-    header('location: /backendprojects/phpprojects/acme/products/');
+    header('location: /phpprojects/acme/products/');
    exit;
    } else {
     $message = "<p class='messagefailure'>Error: sorry,  $invName Product has not been deleted. Please, try again.</p>";
     $_SESSION['message']= $message;
-    header('location: /backendprojects/phpprojects/acme/products/');
+    header('location: /phpprojects/acme/products/');
     exit;
    }
    break;
@@ -303,7 +303,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
     if($newFeaturedProd || $newUnfeaturedProd || !$newUnfeaturedProd){
      $message = "<p class='messagesuccess'>Previously featured item: $featuredProdInfo[invName] was cleared.<br>New featured item: $prodInfo[invName] was set.</p>";
     $_SESSION['message']= $message;
-    header('location: /backendprojects/phpprojects/acme/products/');
+    header('location: /phpprojects/acme/products/');
     exit;
     }
    break;

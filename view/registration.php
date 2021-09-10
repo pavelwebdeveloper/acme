@@ -9,7 +9,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="otherpages">
    <h1>Acme Registration</h1>
@@ -20,7 +20,7 @@
    }
    ?>
    
-   <form method="post" action="/backendprojects/phpprojects/acme/accounts/index.php">
+   <form method="post" action="/phpprojects/acme/accounts/index.php">
     <fieldset>
      <p id="rp">All fields are required.</p>
      <label for="clientFirstname">First name</label>
@@ -40,7 +40,7 @@
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

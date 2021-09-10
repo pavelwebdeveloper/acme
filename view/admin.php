@@ -1,4 +1,4 @@
-<?php if(!($_SESSION['loggedin'])){header('Location: /backendprojects/phpprojects/acme/index.php');}?><!DOCTYPE html>
+<?php if(!($_SESSION['loggedin'])){header('Location: /phpprojects/acme/index.php');}?><!DOCTYPE html>
 <html lang="en-us">
  <head>
   <title>Acme admin</title>
@@ -9,7 +9,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="templatehomepages">
    <?php 
@@ -21,13 +21,13 @@
            ."<li>Email: ".$_SESSION['clientData']['clientEmail']."</li>"
            ."</ul>"
            ."<a class='adminlink' href='../accounts/index.php?action=updateview&id=".urlencode($_SESSION['clientData']['clientId'])."'>Update account information</a>";
-   if($_SESSION['clientData']['clientLevel'] > 1) {echo "<h2>Administrative actions</h2><p>Use the link below to manage products.</p><a class='adminlink' href='/backendprojects/phpprojects/acme/products/index.php'>Products</a>";}
+   if($_SESSION['clientData']['clientLevel'] > 1) {echo "<h2>Administrative actions</h2><p>Use the link below to manage products.</p><a class='adminlink' href='/phpprojects/acme/products/index.php'>Products</a>";}
    
    ?>
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

@@ -46,11 +46,11 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
   default:
    $featuredProdInfo = getFeaturedProductInfo();
    $featuredProduct = "<img id='featuredproduct' src='$featuredProdInfo[invImage]' alt='Image of $featuredProdInfo[invName] Featured Product'><ul id='upperlist'><li>$featuredProdInfo[invDescription]</li>
-     <li><a href='/backendprojects/phpprojects/acme/' title='Add to cart button'><img id='actionbtn' alt='Add to cart button' src='/backendprojects/phpprojects/acme/images/site/iwantit.gif'></a></li>
+     <li><a href='/phpprojects/acme/' title='Add to cart button'><img id='actionbtn' alt='Add to cart button' src='/phpprojects/acme/images/site/iwantit.gif'></a></li>
     </ul>";
    $defaultProdInfo = getDefaultProdInfo();
    $defaultProduct = "<img id='featuredproduct' src='$defaultProdInfo[invImage]' alt='Image of $defaultProdInfo[invName] Featured Product'><ul id='upperlist'><li>$defaultProdInfo[invDescription]</li>
-     <li><a href='/backendprojects/phpprojects/acme/' title='Add to cart button'><img id='actionbtn' alt='Add to cart button' src='/backendprojects/phpprojects/acme/images/site/iwantit.gif'></a></li>
+     <li><a href='/phpprojects/acme/' title='Add to cart button'><img id='actionbtn' alt='Add to cart button' src='/phpprojects/acme/images/site/iwantit.gif'></a></li>
     </ul>";
   include 'view/home.php';
  }

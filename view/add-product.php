@@ -1,6 +1,6 @@
 <?php 
 if(!($_SESSION['clientData']['clientLevel'] > 1)) {
- header('Location: /backendprojects/phpprojects/acme/');
+ header('Location: /phpprojects/acme/');
  exit;
 }
  // Build a dynamic drop-down select list using the $categories array
@@ -30,7 +30,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="productpages">
    <h1>Add a Product</h1>
@@ -40,7 +40,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
     echo $message;
    }
    ?>
-   <form action="/backendprojects/phpprojects/acme/products/index.php" method="post">
+   <form action="/phpprojects/acme/products/index.php" method="post">
     <fieldset>
      <label>Category</label>
      <?php
@@ -78,7 +78,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

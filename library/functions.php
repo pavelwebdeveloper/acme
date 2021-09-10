@@ -20,9 +20,9 @@
 function buildmainNavigation($categories){
  // Build the main navigation bar using the $categories array
  $navList = '<ul id="primaryNav" class="hide">';
- $navList .= "<li><a href='/backendprojects/phpprojects/acme/' title='View the Acme home page'>Home</a></li>";
+ $navList .= "<li><a href='/phpprojects/acme/' title='View the Acme home page'>Home</a></li>";
  foreach ($categories as $category) {
-  $navList .= "<li><a href='/backendprojects/phpprojects/acme/products/index.php?action=categorydisplay&categoryName=".urlencode($category['categoryName'])."' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
+  $navList .= "<li><a href='/phpprojects/acme/products/index.php?action=categorydisplay&categoryName=".urlencode($category['categoryName'])."' title='View our $category[categoryName] product line'>$category[categoryName]</a></li>";
  }
  $navList .= '</ul>';
  return $navList;
@@ -96,9 +96,9 @@ function buildProductsDisplay($products){
  $pd = '<ul id="prod-display">';
  foreach ($products as $product) {
   $pd .= '<li>';
-  $pd .= "<a href='/backendprojects/phpprojects/acme/products/index.php?action=productdisplay&id=".urlencode($product['invId'])."'><img src='$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'></a>";
+  $pd .= "<a href='/phpprojects/acme/products/index.php?action=productdisplay&id=".urlencode($product['invId'])."'><img src='$product[invThumbnail]' alt='Image of $product[invName] on Acme.com'></a>";
   $pd .= '<hr>';
-  $pd .= "<h2><a href='/backendprojects/phpprojects/acme/products/index.php?action=productdisplay&id=".urlencode($product['invId'])."'>$product[invName]</a></h2><br>";
+  $pd .= "<h2><a href='/phpprojects/acme/products/index.php?action=productdisplay&id=".urlencode($product['invId'])."'>$product[invName]</a></h2><br>";
   $pd .= "<span>$$product[invPrice]</span>";
   $pd .= '</li>';
  }
@@ -146,7 +146,7 @@ function buildImageDisplay($imageArray) {
  foreach ($imageArray as $image) {
   $id .= '<li >';
   $id .= "<img src='$image[imgPath]' title='$image[invName] image on Acme.com' alt='$image[invName] image on Acme.com'>";
-  $id .= "<p><a href='/backendprojects/phpprojects/acme/uploads?action=delete&imgId=$image[imgId]&filename=$image[imgName]' title='Delete the image'>Delete $image[imgName]</a></p>";
+  $id .= "<p><a href='/phpprojects/acme/uploads?action=delete&imgId=$image[imgId]&filename=$image[imgName]' title='Delete the image'>Delete $image[imgName]</a></p>";
   $id .= '</li>';
  }
  $id .= '</ul>';

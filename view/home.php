@@ -18,7 +18,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main>
    <h1>Welcome to Acme!</h1>
@@ -36,19 +36,19 @@
      <h3>Featured Recipes</h3>
      <div id="grid">
       <figure>
-       <div><img src="/backendprojects/phpprojects/acme/images/recipes/bbqsand.jpg" alt="Pulled Roadrunner BBQ"></div>
+       <div><img src="/phpprojects/acme/images/recipes/bbqsand.jpg" alt="Pulled Roadrunner BBQ"></div>
        <a href="" title="A link to the recipe for Pulled Roadrunner BBQ"><p class="figcaption">Pulled Roadrunner BBQ</p></a>
             </figure>
             <figure>
-             <div><img src="/backendprojects/phpprojects/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie"></div>
+             <div><img src="/phpprojects/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie"></div>
              <a href="" title="A link to the recipe for Roadrunner Pot Pie"><p class="figcaption">Roadrunner Pot Pie</p></a>
             </figure>
             <figure>
-     <div><img src="/backendprojects/phpprojects/acme/images/recipes/soup.jpg" alt="Roadrunner Soup"></div>
+     <div><img src="/phpprojects/acme/images/recipes/soup.jpg" alt="Roadrunner Soup"></div>
      <a href="" title="A link to the recipe for Roadrunner Soup"><p class="figcaption">Roadrunner Soup</p></a>
             </figure>
             <figure>
-             <div><img src="/backendprojects/phpprojects/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos"></div>
+             <div><img src="/phpprojects/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos"></div>
              <a href="" title="A link to the recipe for Roadrunner Tacos"><p class="figcaption">Roadrunner Tacos</p></a>
             </figure>
      </div>
@@ -57,7 +57,7 @@
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="jsscript/hamburger.js"></script>
  </body>

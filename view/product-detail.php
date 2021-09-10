@@ -9,7 +9,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="productpages">
    <h1><?php echo $prodInfo['invName']; ?></h1>
@@ -33,7 +33,7 @@
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

@@ -1,6 +1,6 @@
 <?php 
 if(!($_SESSION['clientData']['clientLevel'] > 1)) {
- header('location: /backendprojects/phpprojects/acme/');
+ header('location: /phpprojects/acme/');
  exit;
 }
 ?><!DOCTYPE html>
@@ -14,7 +14,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="productpages">
    <h1><?php if(isset($prodInfo['invName'])){ echo "Delete $prodInfo[invName] "; } ?></h1>
@@ -24,7 +24,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
     echo $message;
    }
    ?>
-   <form action="/backendprojects/phpprojects/acme/products/" method="post">
+   <form action="/phpprojects/acme/products/" method="post">
     <fieldset>     
      <label for="invName">Product Name</label>
      <input type="text" name="invName" id="invName"  <?php if(isset($prodInfo['invName'])) {echo "value='$prodInfo[invName]'"; } ?> readonly>
@@ -42,7 +42,7 @@ if(!($_SESSION['clientData']['clientLevel'] > 1)) {
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

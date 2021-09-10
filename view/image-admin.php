@@ -1,4 +1,4 @@
-<?php if(!($_SESSION['loggedin']) && !($_SESSION['clientData']['clientLevel'] > 1)){header('Location: /backendprojects/phpprojects/acme/index.php');}
+<?php if(!($_SESSION['loggedin']) && !($_SESSION['clientData']['clientLevel'] > 1)){header('Location: /phpprojects/acme/index.php');}
 if (isset($_SESSION['message'])) {
  $message = $_SESSION['message'];
 }
@@ -13,7 +13,7 @@ if (isset($_SESSION['message'])) {
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main id="imageadminpage">
    <h1>Image Management</h1>
@@ -24,7 +24,7 @@ if (isset($_SESSION['message'])) {
   echo $message;
  } ?>
 
-<form action="/backendprojects/phpprojects/acme/uploads/" method="post" enctype="multipart/form-data">
+<form action="/phpprojects/acme/uploads/" method="post" enctype="multipart/form-data">
  <label for="invId">Product</label>
  <?php echo $prodSelect; ?><br><br>
  <label for="uploadfile">Upload Image</label>
@@ -42,7 +42,7 @@ if (isset($_SESSION['message'])) {
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

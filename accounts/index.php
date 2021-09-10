@@ -142,7 +142,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
    if($regOutcome === 1){
     setcookie('firstname', $clientFirstname, strtotime('+1 year'), '/');
     $_SESSION['message'] = "<p>Thanks for registering $clientFirstname. Please, use your email and password to login.</p>";
-    header('Location: /backendprojects/phpprojects/acme/accounts/?action=login');
+    header('Location: /phpprojects/acme/accounts/?action=login');
    exit;
    } else {
     $message = "<p>Sorry $clientFirstname, but the registration failed. Please, try again.</p>";
@@ -246,7 +246,7 @@ $greeting = "<span>Welcome " . $cookieFirstname . "</span>";
   case 'Logout':
    $_SESSION = [];
    session_destroy();
-   header('Location: /backendprojects/phpprojects/acme/index.php');
+   header('Location: /phpprojects/acme/index.php');
    break;
   default:
    include '../view/admin.php';

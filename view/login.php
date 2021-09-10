@@ -9,7 +9,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main class="otherpages">
    <h1>Acme Login</h1>
@@ -18,7 +18,7 @@
     echo $_SESSION['message'];
    }
    ?>
-   <form action="/backendprojects/phpprojects/acme/accounts/index.php" method="post">
+   <form action="/phpprojects/acme/accounts/index.php" method="post">
     <fieldset>
      <label for="clientEmail">Email</label>
      <input type="email" name="clientEmail" id="clientEmail" placeholder="someone@gmail.com" pattern="[a-z0-9\._%+-]+@[a-z0-9.]+\.[a-z]{2,}$"<?php if(isset($clientEmail)){echo "value='$clientEmail'";}?> required>
@@ -35,7 +35,7 @@
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>

@@ -10,7 +10,7 @@
  </head>
  <body>
   <header>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/header.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/header.php'; ?>
   </header>
   <main id="clientupdatepage">
    <h1>Account Update</h1>
@@ -23,7 +23,7 @@
    }
    ?>
    
-   <form method="post" action="/backendprojects/phpprojects/acme/accounts/index.php">
+   <form method="post" action="/phpprojects/acme/accounts/index.php">
     <fieldset>
      <label for="clientFirstname">First name</label>
      <input type="text" name="clientFirstname" id="clientFirstname" pattern="[A-Za-z]{2,}" <?php if(isset($clientFirstname)){echo "value='$clientFirstname'";} elseif(isset($clientInfo['clientFirstname'])) {echo "value='$clientInfo[clientFirstname]'"; } ?> required>
@@ -47,7 +47,7 @@
    }
    ?>
    
-   <form method="post" action="/backendprojects/phpprojects/acme/accounts/index.php">
+   <form method="post" action="/phpprojects/acme/accounts/index.php">
     <fieldset>
      <label id="labelpassword" for="clientPassword">New Password:</label>
      <span class="passworddescription">Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter, 1 lower case letter and 1 special character</span>
@@ -61,7 +61,7 @@
    <p id="bottomline"></p>
   </main>
   <footer>
-   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/backendprojects/phpprojects/acme/common/footer.php'; ?>
+   <?php include $_SERVER[ 'DOCUMENT_ROOT' ]  .  '/phpprojects/acme/common/footer.php'; ?>
   </footer>
   <script src="../jsscript/hamburger.js"></script>
  </body>
